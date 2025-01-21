@@ -1,0 +1,12 @@
+.successContainer {
+    text-align: center;
+}
+
+.backButton {
+    margin-top: 20px;
+    background-color: #f44336;
+}
+
+.backButton:hover {
+    background-color: #e53935;
+}

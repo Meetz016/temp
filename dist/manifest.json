@@ -1,0 +1,23 @@
+{
+  "short_name": "Syroa Cashback",
+  "name": "Get cashbacks on every online shopping",
+  "permissions": ["identity", "storage", "tabs"],
+  "version": "0.0.1",
+  "manifest_version": 3,
+  "action": {
+    "default_popup": "index.html",
+    "default_title": "Syroa Cashback"
+  },
+  "host_permissions": [
+    "*://*.amazon.com/*",
+    "*://*.amazon.in/*",
+    "*://*.flipkart.com/*"
+  ],
+  "background": {
+    "service_worker": "service-workers/background.js"
+  },
+  "oauth2": {
+    "client_id": "594600174781-038a65btr121mmn8adgrsg2bjgq10fol.apps.googleusercontent.com",
+    "scopes": ["openid", "email", "profile"]
+  }
+}

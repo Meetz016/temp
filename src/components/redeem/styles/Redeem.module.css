@@ -1,0 +1,79 @@
+/* Redeem.module.css */
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f7f9fc;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 300px;
+}
+
+.redeemContainer {
+  padding: 15px;
+}
+
+.title {
+  text-align: center;
+  color: #4caf50;
+  margin: 0;
+}
+
+.availablePoints {
+  text-align: center;
+  font-size: 1em;
+  color: #333;
+}
+
+.formGroup {
+  margin-bottom: 15px;
+}
+
+.label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+.input,
+.select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1em;
+}
+
+.input:focus,
+.select:focus {
+  border-color: #4caf50;
+  outline: none;
+}
+
+.redeemButton {
+  width: 100%;
+  padding: 12px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.redeemButton:hover {
+  background-color: #45a049;
+}
+
+.error {
+  color: #f44336;
+  font-size: 0.9em;
+}

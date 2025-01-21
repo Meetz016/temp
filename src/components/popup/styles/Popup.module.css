@@ -1,0 +1,224 @@
+div {
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  max-width: 300px;
+  overflow: hidden;
+}
+
+.logo {
+  width: 80px;
+  height: 80px;
+  margin: 15px auto;
+  object-fit: contain;
+}
+
+/* Sign-Out Icon Styles */
+.signOutIcon {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+  transition: opacity 0.3s ease;
+}
+
+.signOutIcon:hover {
+  opacity: 0.7;
+}
+
+/* Heading Styles */
+.title {
+  font-size: 1.6em;
+  color: #4caf50;
+  margin: 10px;
+}
+
+/* Authentication Section */
+.authSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 15px;
+}
+
+.button {
+  padding: 12px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 1em;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  text-align: center;
+}
+
+.button:active {
+  transform: scale(0.98);
+}
+
+.signIn {
+  background-color: #4285f4;
+  color: white;
+}
+
+.signIn:hover {
+  background-color: #357ae8;
+}
+
+/* User Info Section */
+.infoContainer {
+  width: 100%;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+.userInfoContainer {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.userInfo {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-left: 10px;
+}
+
+.userPicture {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.userEmail,
+.userName {
+  margin: 4px 0;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.userEmail {
+  font-size: 0.8em;
+}
+
+.userName {
+  font-size: 1.05em;
+}
+
+.pointsContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px 0;
+  font-weight: bold;
+  width: auto;
+}
+
+.points {
+  font-size: 2.5em;
+  color: #4caf50;
+  width: auto;
+}
+
+.pointsLabel {
+  width: auto;
+  font-size: 1.2em;
+}
+
+.redeemButton {
+  background-color: #ffd700;
+  color: #333;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 1em;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.redeemButton:hover {
+  background-color: #ffc107;
+}
+
+/* Loading Spinner */
+.loading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 20px;
+}
+
+.spinner {
+  border: 4px solid #f3f3f3;
+  border-top: 4px solid #4caf50;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  animation: spin 1s linear infinite;
+  margin-bottom: 10px;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* Notification Styles */
+.notification {
+  width: 100%;
+  padding: 10px 15px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  color: white;
+  font-size: 0.95em;
+  text-align: center;
+  animation: fadeInOut 3s forwards;
+}
+
+.notificationSuccess {
+  background-color: #4caf50;
+}
+
+.notificationError {
+  background-color: #f44336;
+}
+
+@keyframes fadeInOut {
+  0% {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+
+  10% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  90% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  100% {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+}
